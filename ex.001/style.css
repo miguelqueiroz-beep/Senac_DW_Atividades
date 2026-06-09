@@ -1,0 +1,30 @@
+h1 {
+    color: rgb(228, 4, 248);
+}
+
+p {
+    color: rgb(184, 101, 1);
+}
+
+img {
+    width: 500px;
+}
+
+a {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+    /* é com se tivessemos uma caixa e inflamo ela  */
+    text-decoration: none;
+    /* é para tira aquela linha  */
+    border-radius: 5px;
+    /* Arrendodar os cantos  */
+
+}
+
+a:hover {
+    background-color: white;
+    color: rgb(255, 0, 0);
+    outline: 1px solid dodgerblue;
+    /* Configurar o botão para inyteragir quando passar o mouse por cima, outline é para bordas. O resto é para definir as configurações quando o mouse passar por cima */
+}
