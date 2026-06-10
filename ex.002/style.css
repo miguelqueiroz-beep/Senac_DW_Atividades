@@ -1,0 +1,33 @@
+h1 {
+    border: 1px solid black;
+}
+
+p {
+    border: 1px solid black;
+
+}
+
+a {
+    /* border: 1px solid black; */
+    display: inline-block;
+    /* Para dar aultura as coisa */
+    width: 100px;
+    /* Pode ser em px ou em porcentagem.*/
+    text-decoration: none;
+    /* padding: 
+    5px 10px 
+    2px 50px; 
+    margin: 10px; */
+    text-align: center;
+    /* Centralizar na caixa  */
+    height: 30px;
+    line-height: 30px;
+    color: black;
+}
+
+a:hover {
+    background-color:
+        black;
+    color:
+        aliceblue;
+}
