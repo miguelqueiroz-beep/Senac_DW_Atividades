@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: white;
+    --bgMenu: #333;
+    --bgBody: #f1f1f1;
+    --btnHover: #aaa;
+}
+
+:light {
+    --font: rgb(0, 0, 0);
+    --bgMenu: #f7ffcc;
+    --bgBody: #0c0133;
+    --btnHover: #330000;
+}
+
+label[for="btnMenu"] {
+    height: 50px;
+    flex: 1;
+    background-color: var(--bgMenu);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: var(--font);
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+nav{
+    display: flex;
+    background-color: var(--bgMenu);
+    flex-direction: row; /* Pode usar row fica rem linha como o padrão, column vai deixar um de baixo do outro */
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--font);
+    padding: 16px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px;
+    flex: 1px;
+}
+
+nav a:hover {
+    background-color: var(--btnHover);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.col25 {
+    width: 25%;
+
+}
+
+.col75{
+    width: 75%;
+}
+
+input[type='text'], input[type='email'], textarea{
+    border-radius: 4px;
+    border: 1px solid var(--bgMenu);
+    width: 100%;
+    padding: 12px;
+}
+
+#teste{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+#teste div{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+
+@media (max-width: 800px) {
+    label[for="btnMenu"] {
+    display: flex;
+    }
+
+    .active {
+    display: flex;
+    }
+
+    nav {
+        display: none;
+
+    }
+    nav {
+        flex-direction: column;
+    }
+    .row {
+          flex-direction: column;  
+    }
+
+    .col25, .col75 {
+        width: 100%;
+    }
+}
