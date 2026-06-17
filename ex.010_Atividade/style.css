@@ -17,7 +17,9 @@ body{
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
-   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
 }
 
 header{
@@ -73,14 +75,14 @@ nav a:hover {
     background-color: var(--btnHover);
 }
 
-#seçao{
+.seçao{
     height: auto;
     background-color: var(--bgBody);
     /* margin: 10px; */
     margin: 10px;
     padding: 10px;
 }
-#cinza{
+.cinza{
     margin: 10px;
     background-color: var(--bgfundo);
     height: 180px;
@@ -113,49 +115,6 @@ input[type='text'], input[type='email'], textarea{
     padding: 12px;
 }
 
-@media (max-width: 800px) {
-    label[for="btnMenu"] {
-    display: flex;
-    }
-
-    .active {
-    display: flex;
-    }
-
-    nav {
-        display: none;
-
-    }
-    nav {
-        flex-direction: column;
-    }
-    main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .coluna1 {
-        display: flex;
-        width: 100%;
-    }
-
-    #sobremim{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    #rodape{
-        flex-wrap: wrap;
-        width: 100%;
-        display: flex;
-        flex-direction: column; 
-        margin: 0 auto;   
-    }
-    aside {
-        width: 100%; 
-    }
-}
 main{
     flex: 1;
     display: flex;
@@ -177,7 +136,7 @@ aside{
     gap: 10px;
 }
 
-#sobremim{
+.sobremim{
     background-color: var(--bgBody);
 }
 
@@ -189,4 +148,30 @@ aside{
     justify-content: center;
     align-items: center;
 
+}
+
+@media (max-width: 800px) {
+    label[for="btnMenu"] {
+        display: flex;
+    }
+    nav {
+        display: none; /* O JS deve alternar isso mudando a classe ou estilo */
+        flex-direction: column;
+    }
+    nav.active {
+        display: flex;
+    }
+    main {
+        flex-direction: column; /* Faz o aside ir para baixo da coluna1 */
+    }
+    .coluna1 {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .col25, .col75 {
+        width: 100%; /* Formulário vira coluna única no celular */
+    }
 }
