@@ -9,6 +9,33 @@
     --bgMenu: #333;
     --bgBody: #f1f1f1;
     --btnHover: #aaa;
+    --bgfundo:#7c7575;
+
+}
+body{
+    background-color: var(--bgfundo);
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+   
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    position: center;
+}
+
+#cabeçalho{
+    display: flex;
+    margin: 0 auto; 
+    background-color: var(--bgBody);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0 auto; 
 }
 
 label[for="btnMenu"] {
@@ -46,6 +73,46 @@ nav a:hover {
     background-color: var(--btnHover);
 }
 
+#seçao{
+    height: auto;
+    background-color: var(--bgBody);
+    /* margin: 10px; */
+    margin: 10px;
+    padding: 10px;
+}
+#cinza{
+    margin: 10px;
+    background-color: var(--bgfundo);
+    height: 180px;
+    padding: 10px;
+}
+
+h2, h3, p{
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.col25 {
+    width: 25%;
+
+}
+
+.col75{
+    width: 75%;
+}
+
+input[type='text'], input[type='email'], textarea{
+    border-radius: 4px;
+    border: 1px solid var(--bgMenu);
+    width: 100%;
+    padding: 12px;
+}
+
 @media (max-width: 800px) {
     label[for="btnMenu"] {
     display: flex;
@@ -62,5 +129,64 @@ nav a:hover {
     nav {
         flex-direction: column;
     }
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .coluna1 {
+        display: flex;
+        width: 100%;
+    }
+
+    #sobremim{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    #rodape{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        margin: 0 auto;   
+    }
+    aside {
+        width: 100%; 
+    }
+}
+main{
+    flex: 1;
+    display: flex;
+}
+
+.coluna1{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    
+}
+
+aside{
+    display: flex;
+    margin: 10px;
+    width: 25%;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+}
+
+#sobremim{
+    background-color: var(--bgBody);
+}
+
+#rodape{
+    margin: 10px;
+    display: flex;
+    height: 60px;
+    background-color: var(--bgBody);
+    justify-content: center;
+    align-items: center;
 
 }

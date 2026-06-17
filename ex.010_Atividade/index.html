@@ -7,16 +7,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="btnMenu" onclick="menu()">&#9776</label>
     
-    <nav id="nav">
-        <a href="">Link 1</a>
-        <a href="">Link 2</a>
-        <a href="">Link 3</a>
-        <a href="">Link 4</a>
-    </nav>
-    <section>
-        Minhas Fotos 
+       
+            <header>
+                <label for="btnMenu" onclick="menu()">&#9776</label>
+                <section id="cabeçalho">
+                    <h2>Minhas Fotos</h2>
+                    <p>Redimensione a janela e veja como ele se comporta.</p>
+                </section>
+                <nav id="nav">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">Link 4</a>
+                </nav>
+            </header>
+        
+
+    <main>
+            <div class="coluna1">
+                <section id="seçao">
+                        <h2>Seção 1</h2>
+                        <p>Miguel 16/06/2024</p>
+                        <div id="cinza">
+                            <p>Imagem</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste laboriosam quis libero perspiciatis, quam reiciendis optio iusto expedita ipsum ipsam, ex a, possimus hic recusandae qui repellendus. Cum, veritatis?</p>
+                </section>
+                <section id="seçao">
+                        <h2>Seção 2</h2>
+                        <p>Miguel 16/06/2024</p>
+                        <div id="cinza">
+                            <p>Imagem</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste laboriosam quis libero perspiciatis, quam reiciendis optio iusto expedita ipsum ipsam, ex a, possimus hic recusandae qui repellendus. Cum, veritatis?</p>
+                </section>
+                <section id="seçao">
+                    <h2> Contato </h2>
+                        <div class="row">
+                            <div class="col25">
+                                <label for="">Pirmeiro Nome:</label>
+                            </div>
+                            <div class="col75">
+                                <input type="text" placeholder="Digite seu nome...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
+                                <label for="">E-mail:</label>
+                            </div>
+                            <div class="col75">
+                                <input type="email" placeholder="Digite seu email...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
+                                <label for="">Mensagem:</label>
+                            </div>
+                            <div class="col75">
+                                <textarea name="" id="" placeholder="Digite sua mensagem..."></textarea >
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <aside>
+                
+                <div id="sobremim">
+                    <h2>Sobre Mim</h2>
+                    <div id="cinza">
+                        <p>Imagem</p>
+                    </div>
+                </div>
+                <div id="sobremim">
+                    <h2>Postagens Populares</h2>
+                    <div id="cinza">
+                        <p>Imagem</p>
+                    </div>
+                    <div id="cinza">
+                        <p>Imagem</p>
+                    </div>
+                </div>
+                <div id="sobremim">
+                    <h3>Redes Sociais</h3>
+                    <p>&#9742; &#x266B; &#9733;</p>
+                </div>
+
+            </aside>
+            
+            
+    </main>
+    
+    <section id="rodape">
+        <p>Desenvolvido por Miguel</p>
     </section>
 
     <script src="script.js"></script>
