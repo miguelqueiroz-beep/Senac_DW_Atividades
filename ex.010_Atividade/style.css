@@ -10,8 +10,15 @@
     --bgBody: #f1f1f1;
     --btnHover: #aaa;
     --bgfundo:#7c7575;
-
 }
+:root.light {
+    --font: rgb(0, 0, 0);
+    --bgMenu: #ffe3e3;
+    --bgBody: #39c42c;
+    --btnHover: #ff0000;
+    --bgfundo:#420088;
+}
+
 body{
     background-color: var(--bgfundo);
     flex-direction: column;
