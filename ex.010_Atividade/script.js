@@ -1,7 +1,9 @@
 function menu () {
     let menu = document.getElementById('menu');
-    let html = document.documentElement;
     menu.classList.toggle('active');
-    html.classList.toggle('light')
-    
+    html.classList.toggle('light');  
+}
+function cor () {
+    let html = document.documentElement;
+    html.classList.toggle('light');
 }
